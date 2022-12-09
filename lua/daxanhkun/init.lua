@@ -1,0 +1,7 @@
+require('daxanhkun.options')
+require('daxanhkun.filetypes')
+require('daxanhkun.plugins')
+require('daxanhkun.colorscheme')
+require('daxanhkun.keymaps')
+require('daxanhkun.tree-sitter')
+require('daxanhkun.lsp-config.init')
