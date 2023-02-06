@@ -30,11 +30,11 @@ return require('packer').startup(function(use)
   use 'junegunn/fzf.vim'
   use '907th/vim-auto-save'
   use 'alvan/vim-closetag' -- Fot HTML close tag
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  -- use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
   use 'neovim/nvim-lspconfig'
+
   -- Auto completion
-  use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
@@ -46,4 +46,5 @@ return require('packer').startup(function(use)
   use 'hrsh7th/vim-vsnip'
 
   -- End auto completion
+  use 'thoughtbot/vim-rspec'
 end)
