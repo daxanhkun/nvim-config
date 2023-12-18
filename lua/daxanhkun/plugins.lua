@@ -11,6 +11,7 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
   use 'tpope/vim-surround' -- Surrounding ysw
   use 'tpope/vim-commentary' -- For Commenting gcc & gc
+  use 'github/copilot.vim'
 
   use 'f-person/git-blame.nvim'
 
@@ -26,11 +27,18 @@ return require('packer').startup(function(use)
   use 'terryma/vim-multiple-cursors' -- CTRL + N for multiple cursors
   use 'bronson/vim-trailing-whitespace'
   use 'christoomey/vim-tmux-navigator'
+  use 'vimpostor/vim-tpipeline'
   use { 'junegunn/fzf', run = ":call fzf#install()" }
   use 'junegunn/fzf.vim'
   use '907th/vim-auto-save'
   use 'alvan/vim-closetag' -- Fot HTML close tag
-  -- use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function()
+      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+      ts_update()
+    end,
+  }
 
   use 'neovim/nvim-lspconfig'
 
@@ -47,4 +55,6 @@ return require('packer').startup(function(use)
 
   -- End auto completion
   use 'thoughtbot/vim-rspec'
+  use 'tpope/vim-rails'
+
 end)

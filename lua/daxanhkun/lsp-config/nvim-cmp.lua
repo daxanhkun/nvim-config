@@ -63,10 +63,3 @@ cmp.setup.cmdline(':', {
 -- Set up lspconfig.
 capabilities = require('cmp_nvim_lsp').default_capabilities()
 return capabilities
--- -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
--- require('lspconfig')['pyright'].setup {
--- 	capabilities = capabilities
--- }
--- require('lspconfig')['solargraph'].setup {
--- 	capabilities = capabilities
--- }

@@ -43,3 +43,4 @@ opt.foldexpr = "nvim_treesitter#foldexpr()"
 -- Others
 opt.hidden = true
 opt.iskeyword:append('-')
+vim.o.mouse = ""
