@@ -26,8 +26,6 @@ return require('packer').startup(function(use)
   use 'preservim/tagbar' -- Tagbar for code navigation
   use 'terryma/vim-multiple-cursors' -- CTRL + N for multiple cursors
   use 'bronson/vim-trailing-whitespace'
-  use 'christoomey/vim-tmux-navigator'
-  use 'vimpostor/vim-tpipeline'
   use { 'junegunn/fzf', run = ":call fzf#install()" }
   use 'junegunn/fzf.vim'
   use '907th/vim-auto-save'
@@ -57,4 +55,7 @@ return require('packer').startup(function(use)
   use 'thoughtbot/vim-rspec'
   use 'tpope/vim-rails'
 
+  -- For tmuxinator
+  use 'christoomey/vim-tmux-navigator'
+  use 'vimpostor/vim-tpipeline'
 end)

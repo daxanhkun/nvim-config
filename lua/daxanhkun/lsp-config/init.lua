@@ -4,6 +4,7 @@ local capabilities = require('daxanhkun.lsp-config.nvim-cmp')
 local lspconfig = require('lspconfig')
 lspconfig.pyright.setup { capabilities = capabilities}
 lspconfig.solargraph.setup { capabilities = capabilities}
+lspconfig.tsserver.setup { capabilities = capabilities}
 -- lspconfig.ruby_ls.setup { capabilities = capabilities}
 -- Config for ruby-lsp
 _timers = {}
